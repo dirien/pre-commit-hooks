@@ -1,0 +1,10 @@
+# Configuring our pre-commit hooks to be used with pre-commit: https://pre-commit.com/
+
+# https://github.com/golangci/golangci-lint
+- id: golangci-lint
+  name: golangci-lint
+  description: Linters Runner for Go.
+  entry: pre_commit_hooks/go/golangci-lint.sh
+  language: script
+  types: [go]
+  pass_filenames: false
